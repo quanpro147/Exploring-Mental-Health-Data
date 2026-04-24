@@ -78,11 +78,12 @@ EXPLORING-MENTAL-HEALTH-DATA/
 
 
 ## 5. Hướng dẫn cài đặt môi trường
+Yêu cầu: python = 3.13
 
 ### 5.1. Cách 1 - Conda
 
 ```bash
-conda create -n ptdltm python=3.10 -y
+conda create -n ptdltm python=3.13 -y
 conda activate ptdltm
 pip install -r requirements.txt
 python -m ipykernel install --user --name ptdltm --display-name "Python (ptdltm)"
@@ -129,14 +130,18 @@ python -m ipykernel install --user --name ptdltm --display-name "Python (ptdltm)
 git clone https://github.com/quanpro147/Exploring-Mental-Health-Data.git
 cd Exploring-Mental-Health-Data
 ```
-### Bước 2: Tạo môi trường
+
+### Bước 2: Tải dataset
+Tải dataset theo link drive hoặc link kaggle ở trên, sau đó đặt 2 file train.csv và test.csv vào folder data/raw
+
+### Bước 3: Tạo môi trường
 python -m venv venv
 source venv/bin/activate  # hoặc venv\Scripts\activate trên Windows
 
-### Bước 3: Cài thư viện
+### Bước 4: Cài thư viện
 pip install -r requirements.txt
 
-### Bước 4: Chạy notebook
+### Bước 5: Chạy notebook
 Mở thư mục notebooks/
 
 Chạy lần lượt:
